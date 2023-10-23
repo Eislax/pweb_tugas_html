@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelompok 1 - Form 1</title>
+  </head>
+  <body>
+    <form>
+      <!-- FAWZUL AZHIM MUMIN (50421500) -->
+      <fieldset>
+        <!-- M.NUR LUTHFI (50421769) -->
+        <legend>FORM REGISTRASI CALON MAHASISWA</legend>
+        <table>
+          <!-- MUHAMMAD RAFI ILHAM (51421034)-->
+          <tr>
+            <td>
+              <label for="nameInput">Nama Lengkap</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                id="nameInput"
+                placeholder="Nama Lengkap"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- RIVAL FEBRIAN	(51421329) -->
+          <tr>
+            <td>
+              <label for="nikInput">NIK</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="number"
+                id="nikInput"
+                placeholder="XXXXXXXXXXXXXXXX"
+                minlength="16"
+                maxlength="16"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- M.NUR LUTHFI (50421769) -->
+          <tr>
+            <td>
+              <label for="nisnInput">NISN</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="number"
+                id="nisnInput"
+                placeholder="XXXXXXXXXX"
+                minlength="10"
+                maxlength="10"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- DICKY WIJAYA SAPUTRA (50421373) -->
+          <tr>
+            <td>
+              <label for="emailInput">Alamat Email</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="email@contoh.com"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- FAWZUL AZHIM MUMIN (50421500) -->
+          <tr>
+            <td>
+              <label for="phoneInput"
+                >Nomor Handphone (Terkoneksi WhatsApp)</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="number"
+                id="phoneInput"
+                placeholder="08XX-XXXX-XXXX"
+                minlength="12"
+                maxlength="13"
+                pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- RIVAL FEBRIAN	(51421329) -->
+          <tr>
+            <td>
+              <label for="lahirInputTempat">Tempat Lahir</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                id="lahirInputTempat"
+                placeholder="Bogor"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="lahirInputTempat">Tanggal Lahir</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="date" id="lahirInputTanggal" required />
+            </td>
+          </tr>
+
+          <!-- GEREN HAEKAL HAFIZH (50421549)-->
+          <tr>
+            <td>
+              <label>Jenis Kelamin</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input type="radio" id="genderLaki" />
+              <label for="genderLaki">Laki - Laki</label>
+              <input type="radio" id="genderPerempuan" />
+              <label for="genderPerempuan">Perempuan</label>
+            </td>
+          </tr>
+
+          <!-- MUHAMMAD RAFI ILHAM (51421034)-->
+          <tr>
+            <td>
+              <label for="agamaChoice">Agama</label>
+            </td>
+            <td>:</td>
+            <td>
+              <select name="agama" id="agamaChoice" required>
+                <option>-Pilih-</option>
+                <option>Buddha</option>
+                <option>Hindu</option>
+                <option>Islam</option>
+                <option>Katolik</option>
+                <option>Khonghucu</option>
+                <option>Kristen</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- MUHAMMAD RAFI ILHAM (51421034)-->
+          <tr>
+            <td>
+              <label for="alamatRumah">Alamat Rumah</label>
+            </td>
+            <td>:</td>
+            <td>
+              <textarea
+                id="alamatRumah"
+                cols="30"
+                rows="5"
+                placeholder="JALAN MANGGA BESAR III NO. 17, RT 06 RW 07, KELURAHAN BEDALI, KECAMATAN LAWANG, KAB. MALANG, JAWA TIMUR"
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- GEREN HAEKAL HAFIZH (50421549)-->
+          <tr>
+            <td>
+              <label for="kodePos">Kode Pos</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="number"
+                id="kodePos"
+                minlength="5"
+                maxlength="5"
+                placeholder="60526"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- RIVAL FEBRIAN	(51421329) -->
+          <tr>
+            <td>
+              <label for="pasFoto">Upload Pas Foto (PNG, JPG)</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="file"
+                id="pasFoto"
+                accept=".png, .jpg, .jpeg"
+                size="2048"
+                required
+              />
+              * Ukuran Maksimal 2 MB
+            </td>
+          </tr>
+
+          <!-- GEREN HAEKAL HAFIZH (50421549)-->
+          <tr>
+            <td>
+              <label for="scanKTP">Upload Scan KTP (PNG, JPG)</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="file"
+                id="scanKTP"
+                accept=".png, .jpg, .jpeg"
+                size="2048"
+                required
+              />
+              * Ukuran Maksimal 2 MB
+            </td>
+          </tr>
+
+          <!-- DICKY WIJAYA SAPUTRA (50421373) -->
+          <tr>
+            <td>
+              <label for="sekolah">Asal Sekolah</label>
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="text"
+                id="sekolah"
+                placeholder="SMAN 1 Depok"
+                required
+              />
+            </td>
+          </tr>
+
+          <!-- M.NUR LUTHFI (50421769) -->
+          <tr>
+            <td>
+              <label for="scanIjazah"
+                >Upload Scan Ijazah Terlegalisir (PDF)</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="file"
+                id="scanIjazah"
+                accept=".pdf"
+                size="2048"
+                required
+              />
+              * Ukuran Maksimal 2 MB
+            </td>
+          </tr>
+
+          <!-- NUR MUHAMMAD HUSEIN (51421157)-->
+          <tr>
+            <td>
+              <label for="transNilai"
+                >Transkrip Nilai (Semester 1 - 6) (PDF)</label
+              >
+            </td>
+            <td>:</td>
+            <td>
+              <input
+                type="file"
+                id="transNilai"
+                accept=".pdf"
+                size="2048"
+                required
+              />
+              * Ukuran Maksimal 2 MB
+            </td>
+          </tr>
+
+          <!-- NUR MUHAMMAD HUSEIN (51421157) -->
+          <tr>
+            <td>
+              <label for="regionChoice">Pilih Wilayah Kampus</label>
+            </td>
+            <td>:</td>
+            <td>
+              <select id="regionChoice" required>
+                <option>-Pilih-</option>
+                <option>Depok</option>
+                <option>Alam Sutera</option>
+                <option>Karawaci</option>
+                <option>Kalimalang</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- NUR MUHAMMAD HUSEIN (51421157) -->
+          <tr>
+            <td>
+              <label for="prodiChoice">Pilih Program Studi</label>
+            </td>
+            <td>:</td>
+            <td>
+              <select id="prodiChoice" required>
+                <option>-Pilih-</option>
+                <optgroup
+                  label="Fakultas Ilmu Komputer dan Teknologi Informasi"
+                >
+                  <option>- Sistem Komputer S1</option>
+                  <option>- Sistem Informasi S1</option>
+                  <option>- Teknik Komputer D3</option>
+                  <option>- Manajemen Informatika D3</option>
+                </optgroup>
+                <optgroup label="Fakultas Teknologi Industri">
+                  <option>- Informatika S1</option>
+                  <option>- Teknik Elektro S1</option>
+                  <option>- Teknik Mesin S1</option>
+                  <option>- Teknik Industri S1</option>
+                  <option>- Agroteknologi S1</option>
+                </optgroup>
+                <optgroup label="Fakultas Ekonomi">
+                  <option>- Akuntansi S1</option>
+                  <option>- Manajemen S1</option>
+                  <option>- Ekonomi Syariah S1</option>
+                  <option>- Akuntansi D3</option>
+                  <option>- Manajemen D3</option>
+                </optgroup>
+                <optgroup label="Fakultas Sipil dan Perencanaan">
+                  <option>- Arsitektur S1</option>
+                  <option>- Desain Interior S1</option>
+                  <option>- Teknik Sipil S1</option>
+                </optgroup>
+              </select>
+            </td>
+          </tr>
+
+          <!-- FAWZUL AZHIM MUMIN (50421500) -->
+          <tr>
+            <td>
+              <input type="submit" value="Kirim" />
+              <input type="reset" value="Bersihkan" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
