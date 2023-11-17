@@ -7,7 +7,7 @@
     <title>Kelompok 1 - Form 1</title>
   </head>
   <body>
-    <form method="POST">
+    <form method="POST" action="handle.php" enctype="multipart/form-data">
       <!-- FAWZUL AZHIM MUMIN (50421500) -->
       <fieldset>
         <!-- M.NUR LUTHFI (50421769) -->
@@ -145,9 +145,20 @@
             </td>
             <td>:</td>
             <td>
-              <input type="radio" name="gender" id="male_gender" required />
+              <input
+                type="radio"
+                name="gender"
+                id="male_gender"
+                value="laki - laki"
+                required
+              />
               <label for="male_gender">Laki - Laki</label>
-              <input type="radio" name="gender" id="female_gender" />
+              <input
+                type="radio"
+                name="gender"
+                id="female_gender"
+                value="perempuan"
+              />
               <label for="female_gender">Perempuan</label>
             </td>
           </tr>
