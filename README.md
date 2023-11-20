@@ -1,6 +1,6 @@
 # Registrasi Mahasiswa
 
-## query.sql
+`Database Name : PWEB`
 
 ```
 CREATE TABLE data (
