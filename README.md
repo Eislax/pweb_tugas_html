@@ -1,6 +1,6 @@
 # Registrasi Mahasiswa
 
-`Database Name : PWEB`
+`Database Name : pweb`
 
 ```
 CREATE TABLE data (
