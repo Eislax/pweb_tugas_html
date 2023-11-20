@@ -1,5 +1,6 @@
 <?php
     include "crud.php";
+    include "util.php";
 
     $fullname = $_POST["fullname"];
     $nik = $_POST["nik"];
@@ -20,6 +21,11 @@
     $region = $_POST["region"];
     $study_program = $_POST["study_program"];
 
+    $pass_photo_name = "photo/" . $nik . "-photo." . get_extension($pass_photo);
+    $ktp_name = "ktp/" . $nik . "-ktp." . get_extension($ktp);
+    $diploma_name = "diploma/" . $nik . "-diploma." . get_extension($diploma);
+    $transcript_name = "transcript/" . $nik . "-transcript." . get_extension($transcript);
+
     $data = array(
         "fullname" => $fullname,
         "nik" => $nik,
@@ -33,13 +39,17 @@
         "address" => $address,
         "postal_code" => $postal_code,
         "high_school" => $high_school,
-        "pass_photo" => $pass_photo["name"],
-        "ktp" => $ktp["name"],
-        "diploma" => $diploma["name"],
-        "transcript" => $transcript["name"],
+        "pass_photo" => $pass_photo_name,
+        "ktp" => $ktp_name,
+        "diploma" => $diploma_name,
+        "transcript" => $transcript_name,
         "region" => $region,
         "study_program" => $study_program,
     );
 
     insert_data($data);
+    move_file($pass_photo, $pass_photo_name);
+    move_file($ktp, $ktp_name);
+    move_file($diploma, $diploma_name);
+    move_file($transcript, $transcript_name);
 ?>

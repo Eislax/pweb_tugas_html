@@ -33,4 +33,13 @@
             echo "Error: " . $stmt->error;
         }
     }
+
+    function select_all_data() {
+        global $connection;
+
+        $sql = "SELECT * FROM data";
+        $result = $connection->query($sql);
+
+        return $result;
+    }
 ?>

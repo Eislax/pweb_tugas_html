@@ -241,7 +241,7 @@
           <!-- RIVAL FEBRIAN	(51421329) -->
           <tr>
             <td>
-              <label for="pass_photo">Upload Pas Foto (PNG, JPG, JPEG)</label>
+              <label for="pass_photo">Pas Foto (PNG, JPG, JPEG)</label>
             </td>
             <td>:</td>
             <td>
@@ -253,7 +253,7 @@
           <!-- GEREN HAEKAL HAFIZH (50421549)-->
           <tr>
             <td>
-              <label for="ktp">Upload Scan KTP (PDF)</label>
+              <label for="ktp">Scan KTP (PDF)</label>
             </td>
             <td>:</td>
             <td>
@@ -265,7 +265,7 @@
           <!-- M.NUR LUTHFI (50421769) -->
           <tr>
             <td>
-              <label for="diploma">Upload Scan Ijazah Terlegalisir (PDF)</label>
+              <label for="diploma">Scan Ijazah Terlegalisir (PDF)</label>
             </td>
             <td>:</td>
             <td>
@@ -291,7 +291,7 @@
           <!-- NUR MUHAMMAD HUSEIN (51421157) -->
           <tr>
             <td>
-              <label for="region">Pilih Wilayah Kampus</label>
+              <label for="region">Wilayah Kampus</label>
             </td>
             <td>:</td>
             <td>
@@ -308,7 +308,7 @@
           <!-- NUR MUHAMMAD HUSEIN (51421157) -->
           <tr>
             <td>
-              <label for="study_program">Pilih Program Studi</label>
+              <label for="study_program">Program Studi</label>
             </td>
             <td>:</td>
             <td>
@@ -370,6 +370,7 @@
       </fieldset>
     </form>
 
+    <a href="view.php">View</a>
     <script src="script.js"></script>
   </body>
 </html>
